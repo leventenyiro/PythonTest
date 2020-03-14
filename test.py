@@ -1,19 +1,9 @@
-#print("Hello")
-#for i in range(5, 10, 2):
-#    print(i)
+class Osztaly:
+    x = 5
+    def ketszerezes(self):
+        return self.x * 2
 
-
-i = 0
-while i < 5:
-    print(i)
-    i += 1
-
-print()
-
-#i = 0
-#while True:  
-#    print(i)  
-#    i = i + 1  
-#    if(i > 5):  
-#        break
-
+osztaly = Osztaly()
+print(osztaly.x)
+x = osztaly.ketszerezes()
+print("Kétszer: " + str(x))

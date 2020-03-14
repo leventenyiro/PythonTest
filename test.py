@@ -1,9 +1,14 @@
 class Osztaly:
-    x = 5
-    def ketszerezes(self):
-        return self.x * 2
+    def __init__(self, x):
+        self.x = x
 
-osztaly = Osztaly()
-print(osztaly.x)
-x = osztaly.ketszerezes()
-print("Kétszer: " + str(x))
+    def szorzas(self, y):
+        return self.x * y
+
+    #def getX(self):
+    #    return self.x
+
+o = Osztaly(5)
+print(o.x)
+s = o.szorzas(6)
+print(str(s))
